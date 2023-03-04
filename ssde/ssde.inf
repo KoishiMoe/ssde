@@ -4,11 +4,11 @@
 
 [Version]
 Signature="$WINDOWS NT$"
-Class=Sample ; TODO: edit Class
-ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} ; TODO: edit ClassGuid
+Class=ssde ; TODO: edit Class
+ClassGuid={adab4f04-c48b-4d6c-b4d6-aef2a32e8b8a} ; TODO: edit ClassGuid
 Provider=%ManufacturerName%
 CatalogFile=ssde.cat
-DriverVer= ; TODO: set DriverVer in stampinf property pages
+DriverVer=1 ; TODO: set DriverVer in stampinf property pages
 PnpLockDown=1
 
 [DestinationDirs]
@@ -18,9 +18,9 @@ ssde_Device_CoInstaller_CopyFiles = 11
 ; ================= Class section =====================
 
 [ClassInstall32]
-Addreg=SampleClassReg
+Addreg=SSDEClassReg
 
-[SampleClassReg]
+[SSDEClassReg]
 HKR,,,0,%ClassName%
 HKR,,Icon,,-5
 
@@ -80,8 +80,8 @@ KmdfLibraryVersion = $KMDFVERSION$
 
 [Strings]
 SPSVCINST_ASSOCSERVICE= 0x00000002
-ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
-ClassName="Samples" ; TODO: edit ClassName
+ManufacturerName="Chireiden Inc." ;TODO: Replace with your manufacturer name
+ClassName="ssde" ; TODO: edit ClassName
 DiskName = "ssde Installation Disk"
 ssde.DeviceDesc = "ssde Device"
 ssde.SVCDESC = "ssde Service"
